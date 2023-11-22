@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>App</title>
+  </head>
+  <body>
+    {{ message }}
+    {{#with data}}
+      <p>Hello, my name is {{name}}. I am from {{hometown}}. I have {{kids.length}} kids:</p> 
+      <ul>
+        {{#each kids}}
+          <li>
+            {{name}} is {{age}}
+          </li>
+        {{/each}}
+      </ul>
+    {{/with}}
+  </body>
+</html>
